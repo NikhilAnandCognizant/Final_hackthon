@@ -20,7 +20,7 @@ import java.time.Duration;
 public class EditProfileTest extends BaseTest {
 
     @Test(dataProvider = "creds")
-    public void runTest(String userName, String Pass){
+    public void runTest(String userName, String Pass) throws IOException {
         driver.get("https://www.naukri.com/");
         LoginPage lp = new LoginPage(driver);
         DashBoard db = lp.login(userName,Pass);
