@@ -13,6 +13,7 @@ public class DashBoard {
     private WebDriver wd ;
 
     public DashBoard(WebDriver wd){
+
         this.wd = wd;
 
 
@@ -27,6 +28,19 @@ public class DashBoard {
         linkTOsetting.click();
         return new SettingPage(this.wd);
 
+
+    }
+    public LoginPage logout(){
+        WebDriverWait wt = new WebDriverWait(wd,Duration.ofSeconds(5));
+        WebElement burger = wt.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='nI-gNb-drawer__icon']")));
+
+        burger.click();
+
+
+
+        wt.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@title,'Logout')]"))).click();
+
+        return new LoginPage(wd);
 
     }
 

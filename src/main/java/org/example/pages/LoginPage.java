@@ -20,6 +20,7 @@ public class LoginPage {
         this.wd = wd;
 
 
+
     }
 
 
@@ -44,6 +45,15 @@ public class LoginPage {
 
 
         return new DashBoard(this.wd);
+    }
+
+    public WebElement getPasswordField(){
+        WebDriverWait wt = new WebDriverWait(this.wd , Duration.ofSeconds(2));
+        WebElement lb = wt.until(ExpectedConditions.visibilityOfElementLocated(this.loginButton));
+        assert lb != null;
+        lb.click();
+        return wt.until(ExpectedConditions.presenceOfElementLocated(this.passwordField));
+
     }
 
 
