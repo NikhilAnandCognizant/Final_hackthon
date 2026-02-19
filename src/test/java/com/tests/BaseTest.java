@@ -13,28 +13,21 @@ public class BaseTest {
 
         @BeforeTest
         public void prepareModule() {
+            driver = new ChromeDriver();
 
             System.out.println("Module Setup: Config files loaded.");
         }
 
-        @BeforeMethod
-        public void setupBrowser() {
-            // Logic: Open browser for every test case
-            driver = new ChromeDriver();
 
-        }
 
-        @AfterMethod
-        public void closeBrowser() {
-            if (driver != null) {
-//                driver.quit();
-            }
-        }
+
 
         @AfterTest
         public void cleanupModule() {
-            // Logic: Disconnect from DB or clear test data
-            System.out.println("Module Cleanup: Connections closed.");
+
+//            if (driver != null) {
+//                driver.quit();
+//            }
         }
 
 }
