@@ -43,10 +43,9 @@ public class AuthTest extends BaseTest {
 
         LoginPage lp = new LoginPage(driver);
 
-        WebElement passwordInput =lp.getPasswordField();
+        String inputType =lp.getPasswordFieldType();
 
-        // Retrieve the 'type' attribute value
-        String inputType = passwordInput.getAttribute("type");
+
 
         // Assert that it is 'password' to ensure masking is active
         Assert.assertEquals(inputType, "password", "CRITICAL: Password field is not masked!");
@@ -81,10 +80,5 @@ public class AuthTest extends BaseTest {
         Assert.assertTrue(wait.until(ExpectedConditions.urlToBe("https://www.naukri.com/")),
                 "User was not redirected to landing page after logout.");
     }
-    @DataProvider(name = "creds")
-    public Object [][] dataPr() throws IOException {
 
-        return CredsUtil.getxl();
-
-    }
 }
