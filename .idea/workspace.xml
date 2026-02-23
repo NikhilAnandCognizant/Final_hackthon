@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63afd8e6-76c5-4ae3-beba-7c740e84168c" name="Changes" comment="Auth test scenerio implemented">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/FaqPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/login.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/tests/TempTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/tests/stepDef/LoginSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/SettingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/SettingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/DashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/DashBoard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +30,11 @@
       <list>
         <option value="2464120 &lt;nikhil.anand@cognizant.com&gt;" />
       </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="orgBlocking" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -50,6 +60,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Cucumber Java.Scenario: Invalid login shows error message.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -57,17 +68,15 @@
     "TestNG.AuthTest.executor": "Run",
     "TestNG.AuthTest.verifyInvalidLoginErrorMessage.executor": "Run",
     "TestNG.AuthTest.verifySuccessfulLogin.executor": "Run",
-    "TestNG.GeneralUiNavigationTest.executor": "Run",
     "TestNG.OrganizationBlocklistFunctionTest.addToBlocklistAndRemoveFromIt.executor": "Run",
-    "TestNG.OrganizationBlocklistFunctionTest.executor": "Run",
+    "TestNG.OrganizationBlocklistFunctionTest.executor": "Debug",
     "TestNG.OrganizationBlocklistFunctionTest.removeFromBlockList.executor": "Run",
     "TestNG.OrganizationBlocklistFunctionTest.test.executor": "Run",
-    "TestNG.ResumeHeaderAndSkillUpdateTest.editHeader.executor": "Run",
-    "TestNG.ResumeHeaderAndSkillUpdateTest.executor": "Run",
-    "TestNG.ResumeHeaderAndSkillUpdateTest.insertSkill.executor": "Run",
     "TestNG.ResumeHeaderUpdateTest.editHeader.executor": "Run",
     "TestNG.ResumeHeaderUpdateTest.editSkill.executor": "Run",
     "TestNG.ResumeHeaderUpdateTest.insertSkill.executor": "Run",
+    "TestNG.TempTest.ex.executor": "Run",
+    "TestNG.TempTest.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/2464120/OneDrive - Cognizant/Desktop/Final_hackthon/src",
@@ -82,11 +91,44 @@
       <recent name="C:\Users\2464120\OneDrive - Cognizant\Desktop\Final_hackthon\src" />
       <recent name="C:\Users\2464120\OneDrive - Cognizant\Desktop\Final_hackthon\src\main\java\org\example" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\2464120\OneDrive - Cognizant\Desktop\Final_hackthon\src\main\resources" />
-    </key>
   </component>
-  <component name="RunManager" selected="TestNG.ResumeHeaderAndSkillUpdateTest">
+  <component name="RunManager" selected="TestNG.AuthTest">
+    <configuration name="Scenario: Invalid login shows error message" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="7" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/login.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Final_hackthon" />
+      <option name="NAME_FILTER" value="^Invalid login shows error message$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin teamcity --name &quot;^Invalid login shows error message$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Invalid login shows error message" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Final_hackthon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.AuthTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrganizationBlocklistFunctionTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Final_hackthon" />
       <extension name="coverage">
@@ -104,7 +146,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrganizationBlocklistFunctionTest.addToBlocklistAndRemoveFromIt" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TempTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Final_hackthon" />
       <extension name="coverage">
         <pattern>
@@ -113,25 +155,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.OrganizationBlocklistFunctionTest" />
-      <option name="METHOD_NAME" value="addToBlocklistAndRemoveFromIt" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ResumeHeaderAndSkillUpdateTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Final_hackthon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.ResumeHeaderAndSkillUpdateTest" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.TempTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -139,7 +163,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResumeHeaderAndSkillUpdateTest.editHeader" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TempTest.ex" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Final_hackthon" />
       <extension name="coverage">
         <pattern>
@@ -148,26 +172,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.ResumeHeaderAndSkillUpdateTest" />
-      <option name="METHOD_NAME" value="editHeader" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ResumeHeaderAndSkillUpdateTest.insertSkill" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Final_hackthon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.ResumeHeaderAndSkillUpdateTest" />
-      <option name="METHOD_NAME" value="insertSkill" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.TempTest" />
+      <option name="METHOD_NAME" value="ex" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -177,10 +183,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ResumeHeaderAndSkillUpdateTest" />
-        <item itemvalue="TestNG.ResumeHeaderAndSkillUpdateTest.editHeader" />
-        <item itemvalue="TestNG.OrganizationBlocklistFunctionTest.addToBlocklistAndRemoveFromIt" />
-        <item itemvalue="TestNG.ResumeHeaderAndSkillUpdateTest.insertSkill" />
+        <item itemvalue="TestNG.AuthTest" />
+        <item itemvalue="TestNG.TempTest.ex" />
+        <item itemvalue="TestNG.TempTest" />
+        <item itemvalue="Cucumber Java.Scenario: Invalid login shows error message" />
         <item itemvalue="TestNG.OrganizationBlocklistFunctionTest" />
       </list>
     </recent_temporary>

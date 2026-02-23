@@ -24,10 +24,10 @@ public class FaqPage {
         WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(7));
         wait.until(ExpectedConditions.elementToBeClickable(searchInp)).sendKeys(key);
 
-       WebElement sugel= wait.until(ExpectedConditions.elementToBeClickable(sugList));
-
+        WebElement sugel= wait.until(ExpectedConditions.elementToBeClickable(sugList));
+ String text = sugel.getText();
         sugel.click();
-        return sugel.getText();
+        return text;
 
     }
 
