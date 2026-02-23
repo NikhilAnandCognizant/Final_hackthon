@@ -11,7 +11,7 @@ import java.time.Duration;
 public class DashBoard {
     private By burgerButton = By.cssSelector(".nI-gNb-drawer");
     private By accountSetting = By.xpath("//a[contains(text(),'Settings')]");
-    private By logoutB = By.xpath("//a[contains(text(),'Settings')]");
+    private By logoutB = By.xpath("//a[contains(text(),'Logout')]");
    private By profileSetting = By.className("nI-gNb-info__sub-link");
     private WebDriver wd ;
 
