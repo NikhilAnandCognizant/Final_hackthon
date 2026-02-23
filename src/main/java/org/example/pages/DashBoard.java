@@ -42,7 +42,7 @@ public class DashBoard {
 
 
     }
-    public LoginPage logout(){
+    public HomePage logout(){
         WebDriverWait wt = new WebDriverWait(wd,Duration.ofSeconds(5));
         WebElement burger = wt.until(ExpectedConditions.elementToBeClickable(burgerButton));
 
@@ -52,7 +52,7 @@ public class DashBoard {
 
         wt.until(ExpectedConditions.elementToBeClickable(logoutB)).click();
 
-        return new LoginPage(wd);
+        return new HomePage(wd);
 
     }
 

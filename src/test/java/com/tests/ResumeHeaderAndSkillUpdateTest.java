@@ -1,6 +1,6 @@
 package com.tests;
 import org.example.pages.DashBoard;
-import org.example.pages.LoginPage;
+import org.example.pages.HomePage;
 import org.example.pages.SettingPage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -18,7 +18,7 @@ public class ResumeHeaderAndSkillUpdateTest extends BaseTest{
         Object[][] data = CredsUtil.getxl();
         String user = data[0][0].toString();
         String pass = data[0][1].toString();
-        LoginPage lp = new LoginPage(driver);
+        HomePage lp = new HomePage(driver);
         DashBoard db = lp.login(user,pass);
         db.navigateToSetting();
 

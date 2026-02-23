@@ -2,7 +2,7 @@ package com.tests;
 
 
 import org.example.pages.DashBoard;
-import org.example.pages.LoginPage;
+import org.example.pages.HomePage;
 
 import org.openqa.selenium.By;
 
@@ -29,7 +29,7 @@ public class AuthTest extends BaseTest {
     @Test(dataProvider = "creds", groups = {"login_flow"},priority = 2)
     public void verifySuccessfulLogin(String userName, String pass) {
 
-        LoginPage lp = new LoginPage(driver);
+        HomePage lp = new HomePage(driver);
         lp.login(userName, pass);
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -41,7 +41,7 @@ public class AuthTest extends BaseTest {
     @Test(priority = 0)
     public void verifyPasswordMasking() {
 
-        LoginPage lp = new LoginPage(driver);
+        HomePage lp = new HomePage(driver);
 
         String inputType =lp.getPasswordFieldType();
 
@@ -55,7 +55,7 @@ public class AuthTest extends BaseTest {
     @Test(groups = {"login_flow"},priority = 1)
     public void verifyInvalidLoginErrorMessage() {
 
-        LoginPage lp = new LoginPage(driver);
+        HomePage lp = new HomePage(driver);
         lp.login("wrong@email.com", "wrongpassword");
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));

@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63afd8e6-76c5-4ae3-beba-7c740e84168c" name="Changes" comment="Auth test scenerio implemented">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/AccountSettingPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tests/OrganizationBlocklistFunctionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/FooterSection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/JobDetailPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/tests/GeneralUiNavigationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/DashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/DashBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/AuthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/AuthTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/OrganizationBlocklistFunctionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/OrganizationBlocklistFunctionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/ResumeHeaderAndSkillUpdateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/ResumeHeaderAndSkillUpdateTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +65,7 @@
     "TestNG.AuthTest.executor": "Run",
     "TestNG.AuthTest.verifyInvalidLoginErrorMessage.executor": "Run",
     "TestNG.AuthTest.verifySuccessfulLogin.executor": "Run",
+    "TestNG.GeneralUiNavigationTest.executor": "Run",
     "TestNG.OrganizationBlocklistFunctionTest.addToBlocklistAndRemoveFromIt.executor": "Run",
     "TestNG.OrganizationBlocklistFunctionTest.executor": "Debug",
     "TestNG.OrganizationBlocklistFunctionTest.removeFromBlockList.executor": "Run",
@@ -67,7 +73,7 @@
     "TestNG.ResumeHeaderUpdateTest.editHeader.executor": "Run",
     "TestNG.ResumeHeaderUpdateTest.editSkill.executor": "Run",
     "TestNG.ResumeHeaderUpdateTest.insertSkill.executor": "Run",
-    "git-widget-placeholder": "orgBlocking",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/2464120/OneDrive - Cognizant/Desktop/Final_hackthon/src",
     "onboarding.tips.debug.path": "C:/Users/2464120/OneDrive - Cognizant/Desktop/Final_hackthon/src/main/java/org/example/Main.java",
@@ -82,7 +88,41 @@
       <recent name="C:\Users\2464120\OneDrive - Cognizant\Desktop\Final_hackthon\src\main\java\org\example" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.OrganizationBlocklistFunctionTest">
+  <component name="RunManager" selected="TestNG.AuthTest">
+    <configuration name="AuthTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Final_hackthon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.AuthTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeneralUiNavigationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Final_hackthon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.GeneralUiNavigationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrganizationBlocklistFunctionTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Final_hackthon" />
       <extension name="coverage">
@@ -136,49 +176,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrganizationBlocklistFunctionTest.test" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Final_hackthon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.OrganizationBlocklistFunctionTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ResumeHeaderUpdateTest.insertSkill" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Final_hackthon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.ResumeHeaderUpdateTest" />
-      <option name="METHOD_NAME" value="insertSkill" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AuthTest" />
+        <item itemvalue="TestNG.GeneralUiNavigationTest" />
         <item itemvalue="TestNG.OrganizationBlocklistFunctionTest" />
         <item itemvalue="TestNG.OrganizationBlocklistFunctionTest.addToBlocklistAndRemoveFromIt" />
         <item itemvalue="TestNG.OrganizationBlocklistFunctionTest.removeFromBlockList" />
-        <item itemvalue="TestNG.OrganizationBlocklistFunctionTest.test" />
-        <item itemvalue="TestNG.ResumeHeaderUpdateTest.insertSkill" />
       </list>
     </recent_temporary>
   </component>
