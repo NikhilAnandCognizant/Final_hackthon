@@ -10,7 +10,7 @@ import java.time.Duration;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class SettingPage {
+public class ProfilePage {
     private By editButton = By.xpath("//div[@class=\"widgetHead\"]/span[@class=\"edit icon\"]");
     private By textar = By.id("resumeHeadlineTxt");
     private WebDriver wb ;
@@ -22,7 +22,7 @@ public class SettingPage {
     private By skillSugInput = By.id("keySkillSugg");
     private By saveButtonOfSkill = By.id("saveKeySkills");
 
-    public SettingPage(WebDriver wd){
+    public ProfilePage(WebDriver wd){
         this.wb = wd;
 
     }

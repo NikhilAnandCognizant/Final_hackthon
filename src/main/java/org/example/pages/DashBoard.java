@@ -13,20 +13,17 @@ public class DashBoard {
     private WebDriver wd ;
 
     public DashBoard(WebDriver wd){
-
         this.wd = wd;
-
-
     }
 
-    public SettingPage navigateToSetting(){
+    public ProfilePage navigateToSetting(){
         WebDriverWait wait = new WebDriverWait(this.wd, Duration.ofSeconds(2));
 
         WebElement br = wait.until(ExpectedConditions.visibilityOfElementLocated(this.burgerButton));
         br.click();
         WebElement linkTOsetting =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("nI-gNb-info__sub-link")));
         linkTOsetting.click();
-        return new SettingPage(this.wd);
+        return new ProfilePage(this.wd);
 
 
     }
