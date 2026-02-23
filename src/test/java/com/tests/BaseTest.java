@@ -14,6 +14,7 @@ public class BaseTest {
         @BeforeTest
         public void prepareModule() {
             driver = new ChromeDriver();
+            driver.manage().window().maximize();
 
             System.out.println("Module Setup: Config files loaded.");
         }
@@ -24,15 +25,12 @@ public class BaseTest {
 
     }
 
-
-
-
         @AfterTest
         public void cleanupModule() {
 
-//            if (driver != null) {
-//                driver.quit();
-//            }
+   //         if (driver != null) {
+    //            driver.quit();
+    //        }
         }
 
 }
