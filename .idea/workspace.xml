@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63afd8e6-76c5-4ae3-beba-7c740e84168c" name="Changes" comment="Auth test scenerio implemented">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/DriverSetup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/AccountSettingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/AccountSettingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/DashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/DashBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/FooterSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/FooterSection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/JobDetailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/JobDetailPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/SettingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/SettingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/ResumeHeaderAndSkillUpdateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/ResumeHeaderAndSkillUpdateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Utils.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
