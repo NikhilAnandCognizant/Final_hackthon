@@ -1,27 +1,58 @@
 package com.tests.stepDef;
 
+import com.tests.BaseTest;
 import io.cucumber.java.PendingException;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.example.pages.DashBoard;
+import org.example.pages.FaqPage;
+import org.example.pages.LoginPage;
+import org.testng.Assert;
+import utils.CredsUtil;
 
-public class FaqTest {
-    @Given("User is on the Faq homepage")
-    public void userIsOnTheFaqHomepage() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+import java.io.IOException;
+
+public class FaqTest extends BaseTest {
+    private FaqPage fp;
+    private String suggestedText;
+
+
+
+    @Given("User is on the FaqHomepage")
+    public void userIsOnTheFaqHomepage() throws IOException {
+        driver.get("https://www.naukri.com/");
+        Object[][] data = CredsUtil.getxl();
+        String user = data[0][0].toString();
+        String pass = data[0][1].toString();
+        LoginPage lp = new LoginPage(driver);
+        DashBoard db = lp.login(user,pass);
+
+        this.fp = db.navigateToFaq();
+
+
     }
     @When("User serches jo")
     public void userSerchesJo() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        this.suggestedText = fp.search("jo");
+
+
+
     }
 
 
 
     @Then("search result module should be appear and headline should be shown")
     public void searchResultModuleShouldBeAppearAndHeadlineShouldBeShown() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        // Capture the headline text from the results page
+        String resultHeadline = fp.getSearchResultHeadlineText();
+
+
+        Assert.assertEquals(resultHeadline.toLowerCase().trim(),'"'+suggestedText.toLowerCase().trim().substring(0,suggestedText.length()-1)+'"',
+                "Semantic mismatch! Expected: " + suggestedText + " but got: " + resultHeadline);
+        System.out.println("Suggestion: " + suggestedText);
+        System.out.println("Headline: " + resultHeadline);
+
+
     }
 }
