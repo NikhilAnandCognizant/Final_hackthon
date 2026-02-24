@@ -7,28 +7,27 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 /** Footer component – LinkedIn link handling. */
-public class FooterSection {
+public class FooterSection extends BasePage {
 
-    private final WebDriver driver;
-    private final WebDriverWait wait;
+
 
     // Public so test can scroll to these before clicking
     public final By linkedInExact = By.cssSelector("footer a[href*='linkedin.com/company/naukri.com']");
     public final By linkedInAny   = By.cssSelector("footer a[href*='linkedin.com']");
 
-    public FooterSection(WebDriver driver) {
-        this.driver = driver;
-        this.wait   = new WebDriverWait(driver, Duration.ofSeconds(15));
+    public FooterSection(WebDriver dr) {
+        super(dr);
     }
+
 
     /** Wait for visibility (not just clickable) and click the LinkedIn link. */
     public void clickLinkedInVisible() {
         try {
-            WebElement link = wait.until(ExpectedConditions.visibilityOfElementLocated(linkedInExact));
-            link.click();
+
+            waitAndClick(linkedInExact);
         } catch (TimeoutException te) {
-            WebElement link = wait.until(ExpectedConditions.visibilityOfElementLocated(linkedInAny));
-            link.click();
+
+            waitAndClick(linkedInAny);
         }
     }
 }

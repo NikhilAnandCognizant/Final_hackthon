@@ -13,43 +13,38 @@ import java.time.Duration;
  * - Slow, smooth scroll until a target element is visible
  * - Empty search prevention check (disabled OR validation OR no navigation)
  */
-public class HomePage {
+public class HomePage extends  BasePage {
 
-    private final WebDriver driver;
-    private final WebDriverWait wait;
+
+
     By loginButton = By.id("login_Layer");
     By usenameField = new By.ByXPath("//div[@class=\"form-row\"]/input[@type='text']");
     By passwordField = new By.ByXPath("//div[@class=\"form-row\"]/input[@type='password']");
     By loginSubmit = By.cssSelector(".btn-primary.loginButton");
     public DashBoard login(String userName, String password){
         System.out.println(userName+" "+password);
-        WebDriverWait wt = new WebDriverWait(this.driver , Duration.ofSeconds(2));
-        WebElement lb = wt.until(ExpectedConditions.visibilityOfElementLocated(this.loginButton));
-        assert lb != null;
-        lb.click();
 
 
-        WebElement usernameField = wt.until(ExpectedConditions.visibilityOfElementLocated(this.usenameField));
-        usernameField.clear();
-        usernameField.sendKeys(userName);
-
-        WebElement pass = wt.until(ExpectedConditions.presenceOfElementLocated(this.passwordField));
-        pass.clear();
-        pass.sendKeys(password);
-
-        WebElement loginsb = wt.until(ExpectedConditions.presenceOfElementLocated(this.loginSubmit));
-        loginsb.click();
+        waitAndClick(loginButton);
 
 
-        return new DashBoard(this.driver);
+
+        waitAndSendKeys(this.usenameField ,userName);
+        waitAndSendKeys(this.passwordField ,password);
+
+
+         waitAndClick(this.loginSubmit);
+
+
+
+
+        return new DashBoard(wd);
     }
 
     public String getPasswordFieldType(){
-        WebDriverWait wt = new WebDriverWait(this.driver , Duration.ofSeconds(2));
-        WebElement lb = wt.until(ExpectedConditions.visibilityOfElementLocated(this.loginButton));
-        assert lb != null;
-        lb.click();
-        return wt.until(ExpectedConditions.presenceOfElementLocated(this.passwordField)).getAttribute("type");
+
+        waitAndClick(this.loginButton);
+        return waitAndGetElement(passwordField).getAttribute("type");
 
     }
     // Locators (as per your inspections)
@@ -68,14 +63,17 @@ public class HomePage {
                     " | //a[contains(translate(normalize-space(.),'GOTIT','got it'),'got it')]" +
                     " | //a[contains(translate(normalize-space(.),'ACCEPT','accept'),'accept')]");
 
-    public HomePage(WebDriver driver) {
-        this.driver = driver;
-        this.wait   = new WebDriverWait(driver, Duration.ofSeconds(15));
+    public HomePage(WebDriver wd) {
+        super(wd);
+
     }
 
     public HomePage waitForReady() {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(searchInput));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(searchButton));
+
+
+        waitUntilVisiblityOf(searchButton);
+        waitUntilVisiblityOf(searchInput);
+
         dismissCookieBannerIfPresent();
         return this;
     }
@@ -83,31 +81,35 @@ public class HomePage {
     /** Try to close cookie banner (best-effort, safe if not present). */
     public void dismissCookieBannerIfPresent() {
         try {
-            if (!driver.findElements(cookieBar).isEmpty() && !driver.findElements(cookieAcceptBtn).isEmpty()) {
-                WebElement btn = driver.findElement(cookieAcceptBtn);
-                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", btn);
-                new WebDriverWait(driver, Duration.ofSeconds(2))
-                        .until(ExpectedConditions.invisibilityOf(btn));
+            if (!wd.findElements(cookieBar).isEmpty() && !wd.findElements(cookieAcceptBtn).isEmpty()) {
+                WebElement btn = wd.findElement(cookieAcceptBtn);
+                ((JavascriptExecutor) wd).executeScript("arguments[0].click();", btn);
+
+                waitUntilinvisibilityOf(btn);
             }
         } catch (Exception ignored) {}
     }
 
     public HomePage clearSearch() {
-        WebElement input = wait.until(ExpectedConditions.elementToBeClickable(searchInput));
-        input.sendKeys(Keys.chord(Keys.CONTROL, "a"));
-        input.sendKeys(Keys.DELETE);
+
+        WebElement inp = waitAndGetElement(searchInput);
+        inp.sendKeys(Keys.chord(Keys.CONTROL, "a"));
+       inp.sendKeys(Keys.DELETE);
+
+
+
         return this;
     }
 
     public HomePage typeSearch(String text) {
-        WebElement input = wait.until(ExpectedConditions.elementToBeClickable(searchInput));
-        input.sendKeys(text);
+
+        waitAndSendKeys(searchInput,text);
         return this;
     }
 
     public void clickSearch() {
-        WebElement btn = wait.until(ExpectedConditions.elementToBeClickable(searchButton));
-        btn.click();
+
+        waitAndClick(searchButton);
     }
 
     /**
@@ -115,7 +117,7 @@ public class HomePage {
      * Visually shows the footer/LinkedIn icon coming into view.
      */
     public void scrollUntilVisible(By locator) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+        JavascriptExecutor js = (JavascriptExecutor) wd;
 
         int step = 120;          // small step for slow movement
         int maxSteps = 40;       // up to ~40 steps
@@ -123,7 +125,7 @@ public class HomePage {
 
         for (int i = 0; i < maxSteps; i++) {
             try {
-                WebElement el = driver.findElement(locator);
+                WebElement el = wd.findElement(locator);
 
                 if (el.isDisplayed()) {
                     // Final smooth alignment into center
@@ -140,7 +142,9 @@ public class HomePage {
         }
 
         // If still not visible, wait and then do a final smooth center
-        WebElement el = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+//        WebElement el = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        WebElement el = waitAndGetElement(locator);
+
         js.executeScript("arguments[0].scrollIntoView({block:'center', behavior:'smooth'});", el);
         pause(700);
     }
@@ -151,10 +155,10 @@ public class HomePage {
      */
     public boolean isEmptySearchPrevented() {
         clearSearch();
-        String urlBefore = driver.getCurrentUrl();
-        String titleBefore = driver.getTitle();
+        String urlBefore = wd.getCurrentUrl();
+        String titleBefore = wd.getTitle();
 
-        WebElement btn = wait.until(ExpectedConditions.visibilityOfElementLocated(searchButton));
+        WebElement btn = waitAndGetElement(searchButton);
         boolean disabledAttr = "true".equalsIgnoreCase(btn.getAttribute("aria-disabled"))
                 || btn.getAttribute("disabled") != null;
 
@@ -163,13 +167,12 @@ public class HomePage {
 
         boolean validationShown;
         try {
-            validationShown = new WebDriverWait(driver, Duration.ofSeconds(3))
-                    .until(d -> !d.findElements(validationCandidates).isEmpty());
+            validationShown = getWait().until(d -> !d.findElements(validationCandidates).isEmpty());
         } catch (TimeoutException te) {
             validationShown = false;
         }
 
-        boolean navigated = !(urlBefore.equals(driver.getCurrentUrl()) && titleBefore.equals(driver.getTitle()));
+        boolean navigated = !(urlBefore.equals(wd.getCurrentUrl()) && titleBefore.equals(wd.getTitle()));
         return disabledAttr || validationShown || !navigated;
     }
 

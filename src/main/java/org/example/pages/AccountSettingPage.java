@@ -1,5 +1,6 @@
 package org.example.pages;
 
+import org.example.utils.DriverSetup;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -8,23 +9,24 @@ import java.time.Duration;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class AccountSettingPage {
-    private WebDriver wd ;
+public class AccountSettingPage extends BasePage {
+
     private By blockCompany = By.xpath("//li[@id='BlockCompany']");
     private By blockingInput = By.xpath("//div[@class='sWrap']/div[@class='inpWrap']/input");
     private By saveButton = By.id("saveSettingBtn");
     private By chips = By.xpath("//span[@class='tagTxt']");
     private By removeals = By.xpath("//div[@class='waves-effect chip']/a");
     private By dropDown = By.xpath(" //div[@id='sugDrp_blockCompanySugg']/ul/li");
-    public AccountSettingPage(WebDriver wd){
 
-        this.wd = wd;
-
+    public AccountSettingPage(WebDriver dr) {
+        super(dr);
     }
 
+
     public void navigateToBlocking(){
-        WebDriverWait wait = new WebDriverWait(this.wd, Duration.ofSeconds(3));
-      wait.until(ExpectedConditions.elementToBeClickable(blockCompany)).click();
+
+
+      waitAndClick(blockCompany,3);
 
 
 
@@ -35,13 +37,13 @@ public class AccountSettingPage {
 
     }
     public void setBlockCompany(String comp) {
-        WebDriverWait wait = new WebDriverWait(this.wd, Duration.ofSeconds(10));
+
 
         // We use a loop to retry if the element goes stale immediately
         for (int i = 0; i < 3; i++) {
             try {
                 // Re-identify the element inside the loop
-                WebElement inp = wait.until(ExpectedConditions.visibilityOfElementLocated(blockingInput));
+                WebElement inp = waitAndGetElement(blockingInput,10);
                 inp.clear();
                 inp.sendKeys(comp);
 
@@ -52,17 +54,15 @@ public class AccountSettingPage {
             }
         }
 
-        // Now proceed to click the dropdown
-        WebElement dropdown = wait.until(ExpectedConditions.elementToBeClickable(dropDown));
-        dropdown.click();
 
-        WebElement save = wait.until(ExpectedConditions.elementToBeClickable(saveButton));
-        save.click();
+
+        waitAndClick(dropDown);
+
+        waitAndClick(saveButton);
     }
 
     public List<String> getListOfBlockCompanies(){
-        WebDriverWait wait = new WebDriverWait(this.wd, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.elementToBeClickable(chips));
+        waitAndGetElement(chips);
         List<WebElement> chipss = wd.findElements(chips);
         return chipss.stream().map(WebElement::getText).collect(Collectors.toList());
     }

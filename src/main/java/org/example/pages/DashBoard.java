@@ -1,5 +1,6 @@
 package org.example.pages;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,19 +9,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class DashBoard {
+public class DashBoard extends BasePage {
     private By burgerButton = By.cssSelector(".nI-gNb-drawer");
     private By accountSetting = By.xpath("//a[contains(text(),'Settings')]");
     private By logoutB = By.xpath("//a[contains(text(),'Logout')]");
    private By profileSetting = By.className("nI-gNb-info__sub-link");
-    private WebDriver wd ;
 
-    public DashBoard(WebDriver wd){
-
-        this.wd = wd;
-
-
+    public DashBoard(WebDriver dr) {
+        super(dr);
     }
+
+
     public AccountSettingPage navigateToAccountSetting(){
         WebDriverWait wait = new WebDriverWait(this.wd, Duration.ofSeconds(2));
 
@@ -28,7 +27,7 @@ public class DashBoard {
         br.click();
         WebElement toAccountSetting =  wait.until(ExpectedConditions.visibilityOfElementLocated(accountSetting));
         toAccountSetting.click();
-        return new AccountSettingPage(wd);
+        return new AccountSettingPage(this.wd);
     }
 
     public SettingPage navigateToSetting(){
