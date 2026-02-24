@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63afd8e6-76c5-4ae3-beba-7c740e84168c" name="Changes" comment="Auth test scenerio implemented">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/DashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/DashBoard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/tests/searchFilterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,12 +34,12 @@
     &quot;assignee&quot;: &quot;NikhilAnandCognizant&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/NikhilAnandCognizant/Final_hackthon.git&quot;,
-    &quot;accountId&quot;: &quot;d7d559e2-be4b-480d-aafd-3a9d894e0007&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/NikhilAnandCognizant/Final_hackthon.git",
+    "accountId": "88203e4c-19bc-483c-a131-32986026cd3e"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -47,40 +48,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;TestNG.AuthTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AuthTest.verifyInvalidLoginErrorMessage.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AuthTest.verifySuccessfulLogin.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.GeneralUiNavigationTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.OrganizationBlocklistFunctionTest.addToBlocklistAndRemoveFromIt.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.OrganizationBlocklistFunctionTest.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.OrganizationBlocklistFunctionTest.removeFromBlockList.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.OrganizationBlocklistFunctionTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ResumeHeaderUpdateTest.editHeader.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ResumeHeaderUpdateTest.editSkill.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ResumeHeaderUpdateTest.insertSkill.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/2464120/OneDrive - Cognizant/Desktop/Final_hackthon/src&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/2464120/OneDrive - Cognizant/Desktop/Final_hackthon/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.AuthTest.executor": "Run",
+    "TestNG.AuthTest.verifyInvalidLoginErrorMessage.executor": "Run",
+    "TestNG.AuthTest.verifySuccessfulLogin.executor": "Run",
+    "TestNG.GeneralUiNavigationTest.executor": "Run",
+    "TestNG.OrganizationBlocklistFunctionTest.addToBlocklistAndRemoveFromIt.executor": "Run",
+    "TestNG.OrganizationBlocklistFunctionTest.executor": "Debug",
+    "TestNG.OrganizationBlocklistFunctionTest.removeFromBlockList.executor": "Run",
+    "TestNG.OrganizationBlocklistFunctionTest.test.executor": "Run",
+    "TestNG.ResumeHeaderUpdateTest.editHeader.executor": "Run",
+    "TestNG.ResumeHeaderUpdateTest.editSkill.executor": "Run",
+    "TestNG.ResumeHeaderUpdateTest.insertSkill.executor": "Run",
+    "TestNG.searchFilterTest.executor": "Run",
+    "TestNG.searchFilterTest.verifyKeywordSearch.executor": "Run",
+    "TestNG.searchFilterTest.verifyLocationFilter.executor": "Run",
+    "TestNG.searchFilterTest.verifySalaryFilter.executor": "Run",
+    "TestNG.searchFilterTest.verifyTestResultRouting.executor": "Run",
+    "TestNG.searchFilterTest.verifyZeroSearchResults.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/2464120/OneDrive - Cognizant/Desktop/Final_hackthon/src",
+    "onboarding.tips.debug.path": "C:/Users/2464120/OneDrive - Cognizant/Desktop/Final_hackthon/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\2464120\OneDrive - Cognizant\Desktop\Final_hackthon\src" />
       <recent name="C:\Users\2464120\OneDrive - Cognizant\Desktop\Final_hackthon\src\main\java\org\example" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AuthTest">
-    <configuration name="AuthTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.searchFilterTest.verifyZeroSearchResults">
+    <configuration name="searchFilterTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Final_hackthon" />
       <extension name="coverage">
         <pattern>
@@ -89,7 +96,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.AuthTest" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.searchFilterTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -97,7 +104,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GeneralUiNavigationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="searchFilterTest.verifyLocationFilter" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Final_hackthon" />
       <extension name="coverage">
         <pattern>
@@ -106,42 +113,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.GeneralUiNavigationTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrganizationBlocklistFunctionTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Final_hackthon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.OrganizationBlocklistFunctionTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrganizationBlocklistFunctionTest.addToBlocklistAndRemoveFromIt" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Final_hackthon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.OrganizationBlocklistFunctionTest" />
-      <option name="METHOD_NAME" value="addToBlocklistAndRemoveFromIt" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.searchFilterTest" />
+      <option name="METHOD_NAME" value="verifyLocationFilter" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -149,7 +122,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrganizationBlocklistFunctionTest.removeFromBlockList" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="searchFilterTest.verifySalaryFilter" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Final_hackthon" />
       <extension name="coverage">
         <pattern>
@@ -158,8 +131,44 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.OrganizationBlocklistFunctionTest" />
-      <option name="METHOD_NAME" value="removeFromBlockList" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.searchFilterTest" />
+      <option name="METHOD_NAME" value="verifySalaryFilter" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="searchFilterTest.verifyTestResultRouting" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Final_hackthon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.searchFilterTest" />
+      <option name="METHOD_NAME" value="verifyTestResultRouting" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="searchFilterTest.verifyZeroSearchResults" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Final_hackthon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.searchFilterTest" />
+      <option name="METHOD_NAME" value="verifyZeroSearchResults" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -169,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AuthTest" />
-        <item itemvalue="TestNG.GeneralUiNavigationTest" />
-        <item itemvalue="TestNG.OrganizationBlocklistFunctionTest" />
-        <item itemvalue="TestNG.OrganizationBlocklistFunctionTest.addToBlocklistAndRemoveFromIt" />
-        <item itemvalue="TestNG.OrganizationBlocklistFunctionTest.removeFromBlockList" />
+        <item itemvalue="TestNG.searchFilterTest.verifyZeroSearchResults" />
+        <item itemvalue="TestNG.searchFilterTest.verifySalaryFilter" />
+        <item itemvalue="TestNG.searchFilterTest.verifyLocationFilter" />
+        <item itemvalue="TestNG.searchFilterTest.verifyTestResultRouting" />
+        <item itemvalue="TestNG.searchFilterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -215,6 +224,15 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/tests/OrganizationBlocklistFunctionTest.java</url>
           <line>14</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/tests/searchFilterTest.java</url>
+          <line>30</line>
+          <properties class="com.tests.searchFilterTest" method="verifyTestResultRouting">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
