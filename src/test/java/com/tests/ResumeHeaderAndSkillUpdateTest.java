@@ -3,16 +3,17 @@ import org.example.pages.DashBoard;
 import org.example.pages.HomePage;
 import org.example.pages.SettingPage;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import utils.CredsUtil;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class ResumeHeaderAndSkillUpdateTest extends BaseTest{
 
-    @BeforeMethod
+    @BeforeTest
     public void setupBrowser() throws IOException {
         driver.get("https://www.naukri.com/");
         Object[][] data = CredsUtil.getxl();
@@ -23,6 +24,8 @@ public class ResumeHeaderAndSkillUpdateTest extends BaseTest{
         db.navigateToSetting();
 
     }
+
+
     @Test
     public void editHeader(){
         String header = "B.Tech CSE Student | Full Stack Developer | Java, Spring Boot, Next.js, AWS | Passionate about Scalable Web Apps, Generative AI, Agentic AI, RAG, and Google Agent Development KitB.Tech CSE Student | Full Stack Developer | Java, Spring Boot,Next js";
@@ -34,6 +37,7 @@ public class ResumeHeaderAndSkillUpdateTest extends BaseTest{
 
     @Test
     public void insertSkill() throws InterruptedException {
+
         SettingPage sp = new SettingPage(driver);
         String sampleSkill = "Spring Microservices";
         sp.insertSkill(sampleSkill);

@@ -26,6 +26,11 @@
         <option value="2464120 &lt;nikhil.anand@cognizant.com&gt;" />
       </list>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="orgBlocking" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -89,9 +94,13 @@
   <component name="RunManager" selected="TestNG.searchFilterTest.verifyZeroSearchResults">
     <configuration name="searchFilterTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Final_hackthon" />
+      <option name="NAME_FILTER" value="^Faq search$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin teamcity --name &quot;^Faq search$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Faq search" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tests.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
