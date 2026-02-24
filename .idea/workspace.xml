@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="63afd8e6-76c5-4ae3-beba-7c740e84168c" name="Changes" comment="Auth test scenerio implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/SettingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/SettingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/DashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/DashBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/TempTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/TempTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/stepDef/FaqTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/stepDef/FaqTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +27,11 @@
       <list>
         <option value="2464120 &lt;nikhil.anand@cognizant.com&gt;" />
       </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="orgBlocking" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -48,63 +55,63 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "TestNG.AuthTest.executor": "Run",
-    "TestNG.AuthTest.verifyInvalidLoginErrorMessage.executor": "Run",
-    "TestNG.AuthTest.verifySuccessfulLogin.executor": "Run",
-    "TestNG.GeneralUiNavigationTest.executor": "Run",
-    "TestNG.OrganizationBlocklistFunctionTest.addToBlocklistAndRemoveFromIt.executor": "Run",
-    "TestNG.OrganizationBlocklistFunctionTest.executor": "Run",
-    "TestNG.OrganizationBlocklistFunctionTest.removeFromBlockList.executor": "Run",
-    "TestNG.OrganizationBlocklistFunctionTest.test.executor": "Run",
-    "TestNG.ResumeHeaderAndSkillUpdateTest.editHeader.executor": "Run",
-    "TestNG.ResumeHeaderAndSkillUpdateTest.executor": "Run",
-    "TestNG.ResumeHeaderAndSkillUpdateTest.insertSkill.executor": "Run",
-    "TestNG.ResumeHeaderUpdateTest.editHeader.executor": "Run",
-    "TestNG.ResumeHeaderUpdateTest.editSkill.executor": "Run",
-    "TestNG.ResumeHeaderUpdateTest.insertSkill.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/2464120/OneDrive - Cognizant/Desktop/Final_hackthon/src",
-    "onboarding.tips.debug.path": "C:/Users/2464120/OneDrive - Cognizant/Desktop/Final_hackthon/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Cucumber Java.Scenario: Faq search.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Invalid login shows error message.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TestNG.AuthTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AuthTest.verifyInvalidLoginErrorMessage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AuthTest.verifySuccessfulLogin.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.OrganizationBlocklistFunctionTest.addToBlocklistAndRemoveFromIt.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.OrganizationBlocklistFunctionTest.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.OrganizationBlocklistFunctionTest.removeFromBlockList.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.OrganizationBlocklistFunctionTest.test.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ResumeHeaderAndSkillUpdateTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ResumeHeaderUpdateTest.editHeader.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ResumeHeaderUpdateTest.editSkill.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ResumeHeaderUpdateTest.insertSkill.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TempTest.ex.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TempTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Rebasing cucumber&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/2464120/OneDrive - Cognizant/Desktop/Final_hackthon/src&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/2464120/OneDrive - Cognizant/Desktop/Final_hackthon/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\2464120\OneDrive - Cognizant\Desktop\Final_hackthon\src" />
       <recent name="C:\Users\2464120\OneDrive - Cognizant\Desktop\Final_hackthon\src\main\java\org\example" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\2464120\OneDrive - Cognizant\Desktop\Final_hackthon\src\main\resources" />
-    </key>
   </component>
-  <component name="RunManager" selected="TestNG.ResumeHeaderAndSkillUpdateTest">
-    <configuration name="OrganizationBlocklistFunctionTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Faq search">
+    <configuration name="Scenario: Faq search" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="7" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/login.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Final_hackthon" />
+      <option name="NAME_FILTER" value="^Faq search$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin teamcity --name &quot;^Faq search$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Faq search" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tests.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.OrganizationBlocklistFunctionTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrganizationBlocklistFunctionTest.addToBlocklistAndRemoveFromIt" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AuthTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Final_hackthon" />
       <extension name="coverage">
         <pattern>
@@ -113,9 +120,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.OrganizationBlocklistFunctionTest" />
-      <option name="METHOD_NAME" value="addToBlocklistAndRemoveFromIt" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.AuthTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -139,7 +145,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResumeHeaderAndSkillUpdateTest.editHeader" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TempTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Final_hackthon" />
       <extension name="coverage">
         <pattern>
@@ -148,16 +154,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.ResumeHeaderAndSkillUpdateTest" />
-      <option name="METHOD_NAME" value="editHeader" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.TempTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResumeHeaderAndSkillUpdateTest.insertSkill" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TempTest.ex" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Final_hackthon" />
       <extension name="coverage">
         <pattern>
@@ -166,8 +171,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.ResumeHeaderAndSkillUpdateTest" />
-      <option name="METHOD_NAME" value="insertSkill" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.TempTest" />
+      <option name="METHOD_NAME" value="ex" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -177,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Faq search" />
         <item itemvalue="TestNG.ResumeHeaderAndSkillUpdateTest" />
-        <item itemvalue="TestNG.ResumeHeaderAndSkillUpdateTest.editHeader" />
-        <item itemvalue="TestNG.OrganizationBlocklistFunctionTest.addToBlocklistAndRemoveFromIt" />
-        <item itemvalue="TestNG.ResumeHeaderAndSkillUpdateTest.insertSkill" />
-        <item itemvalue="TestNG.OrganizationBlocklistFunctionTest" />
+        <item itemvalue="TestNG.TempTest" />
+        <item itemvalue="TestNG.AuthTest" />
+        <item itemvalue="TestNG.TempTest.ex" />
       </list>
     </recent_temporary>
   </component>
