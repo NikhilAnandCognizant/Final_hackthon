@@ -21,10 +21,44 @@ public class ProfilePage {
     private By skillDropdown = By.xpath("//div[@class='suggest keySkillSuggCont']/div[@class='sugCont slideDown']/ul/li");
     private By skillSugInput = By.id("keySkillSugg");
     private By saveButtonOfSkill = By.id("saveKeySkills");
+    //locator for uploading resume
+    // Inside ProfilePage class
+    private By resumeUploadInput = By.id("attachCV"); // Check if this ID is correct for your Naukri version
+    private By uploadSuccessMessage = By.xpath("//span[@id='attachCVMsgBox']//p[@class='msg']");
+    //locator for getting error message
+    private By uploadErrorMessage = By.xpath("//p[@class='error']");
+
+
+    public void uploadResume(String filePath) {
+        WebDriverWait wait = new WebDriverWait(this.wb, Duration.ofSeconds(10));
+        // Find the hidden input element and send the file path
+        WebElement uploadElement = wb.findElement(resumeUploadInput);
+        uploadElement.sendKeys(filePath);
+    }
+
+    public boolean isResumeUploadSuccessful() {
+        try {
+            WebDriverWait wait = new WebDriverWait(this.wb, Duration.ofSeconds(10));
+            return wait.until(ExpectedConditions.visibilityOfElementLocated(uploadSuccessMessage)).isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    //Method to get upload error text ()
+    public String getUploadErrorText(){
+        try{
+            WebDriverWait wait = new WebDriverWait(this.wb, Duration.ofSeconds(10));
+            WebElement errorElement = wait.until(ExpectedConditions.presenceOfElementLocated(uploadErrorMessage));
+            return errorElement.getText();
+
+        }   catch(Exception e){
+            return ""; //empty string if no text is located
+        }
+    }
 
     public ProfilePage(WebDriver wd){
         this.wb = wd;
-
     }
     public void editHeadLine(String header){
         WebDriverWait wt = new WebDriverWait(this.wb , Duration.ofSeconds(3));

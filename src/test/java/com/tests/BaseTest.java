@@ -19,9 +19,7 @@ public class BaseTest {
         }
     @DataProvider(name = "creds")
     public Object [][] dataPr() throws IOException {
-
         return CredsUtil.getxl();
-
     }
 
 

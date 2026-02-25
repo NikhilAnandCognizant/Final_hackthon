@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63afd8e6-76c5-4ae3-beba-7c740e84168c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/CompressedResume.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/InvalidFormatResume.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/MaxSizeResume.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/SettingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/SettingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/ToggleNotificationsSettingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/ResumeHeaderUpdateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/ResumeUploadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/ResumeUploadTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,18 +33,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "NikhilAnandCognizant"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;NikhilAnandCognizant&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/NikhilAnandCognizant/Final_hackthon.git",
-    "accountId": "d7d559e2-be4b-480d-aafd-3a9d894e0007"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/NikhilAnandCognizant/Final_hackthon.git&quot;,
+    &quot;accountId&quot;: &quot;d7d559e2-be4b-480d-aafd-3a9d894e0007&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -49,36 +53,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "TestNG.AuthTest.executor": "Run",
-    "TestNG.AuthTest.verifyInvalidLoginErrorMessage.executor": "Run",
-    "TestNG.AuthTest.verifySuccessfulLogin.executor": "Run",
-    "TestNG.ResumeHeaderUpdateTest.editHeader.executor": "Run",
-    "TestNG.ResumeHeaderUpdateTest.editSkill.executor": "Run",
-    "TestNG.ResumeHeaderUpdateTest.insertSkill.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/2464120/OneDrive - Cognizant/Desktop/Final_hackthon/src",
-    "onboarding.tips.debug.path": "C:/Users/2464120/OneDrive - Cognizant/Desktop/Final_hackthon/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TestNG.AuthTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AuthTest.verifyInvalidLoginErrorMessage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AuthTest.verifySuccessfulLogin.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ResumeHeaderAndSkillUpdateTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ResumeHeaderUpdateTest.editHeader.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ResumeHeaderUpdateTest.editSkill.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ResumeHeaderUpdateTest.insertSkill.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ResumeUploadTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Mrityunjay__Profile__Management&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/2464120/OneDrive - Cognizant/Desktop/Final_hackthon/src&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/2464120/OneDrive - Cognizant/Desktop/Final_hackthon/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\2464120\OneDrive - Cognizant\Desktop\Final_hackthon\src" />
       <recent name="C:\Users\2464120\OneDrive - Cognizant\Desktop\Final_hackthon\src\main\java\org\example" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ResumeHeaderUpdateTest.insertSkill">
-    <configuration name="AuthTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Final_hackthon" />
+  <component name="RunManager" selected="TestNG.ResumeUploadTest">
+    <configuration name="ResumeHeaderAndSkillUpdateTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.tests.*" />
@@ -86,26 +92,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.AuthTest" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.ResumeHeaderAndSkillUpdateTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AuthTest.verifySuccessfulLogin" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Final_hackthon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.AuthTest" />
-      <option name="METHOD_NAME" value="verifySuccessfulLogin" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -166,13 +154,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ResumeUploadTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Final_hackthon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.ResumeUploadTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ResumeUploadTest" />
+        <item itemvalue="TestNG.ResumeHeaderAndSkillUpdateTest" />
         <item itemvalue="TestNG.ResumeHeaderUpdateTest.insertSkill" />
         <item itemvalue="TestNG.ResumeHeaderUpdateTest.editSkill" />
         <item itemvalue="TestNG.ResumeHeaderUpdateTest.editHeader" />
-        <item itemvalue="TestNG.AuthTest.verifySuccessfulLogin" />
-        <item itemvalue="TestNG.AuthTest" />
       </list>
     </recent_temporary>
   </component>
@@ -211,5 +216,13 @@
     <SUITE FILE_PATH="coverage/Final_hackthon$AuthTest.ic" NAME="AuthTest Coverage Results" MODIFIED="1771517121388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>com.tests.*</FILTER>
     </SUITE>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>
