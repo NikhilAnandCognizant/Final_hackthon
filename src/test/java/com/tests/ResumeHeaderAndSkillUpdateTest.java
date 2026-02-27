@@ -1,9 +1,10 @@
 package com.tests;
 import org.example.pages.DashBoard;
 import org.example.pages.HomePage;
-import org.example.pages.SettingPage;
+import org.example.pages.ProfilePage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import utils.CredsUtil;
 import java.io.IOException;
@@ -28,7 +29,7 @@ public class ResumeHeaderAndSkillUpdateTest extends BaseTest{
     @Test
     public void editHeader(){
         String header = "B.Tech CSE Student | Full Stack Developer | Java, Spring Boot, Next.js, AWS | Passionate about Scalable Web Apps, Generative AI, Agentic AI, RAG, and Google Agent Development KitB.Tech CSE Student | Full Stack Developer | Java, Spring Boot,Next js";
-        SettingPage sp = new SettingPage(driver);
+        ProfilePage sp = new ProfilePage(driver);
         sp.editHeadLine(header);
         String afterEdit = sp.getHeadLine();
         Assert.assertTrue(afterEdit.contains(header));
@@ -37,7 +38,7 @@ public class ResumeHeaderAndSkillUpdateTest extends BaseTest{
     @Test
     public void insertSkill() throws InterruptedException {
 
-        SettingPage sp = new SettingPage(driver);
+        ProfilePage sp = new ProfilePage(driver);
         String sampleSkill = "Spring Microservices";
         sp.insertSkill(sampleSkill);
         TimeUnit.SECONDS.sleep(2);
