@@ -172,7 +172,7 @@ public class HomePage extends  BasePage {
             validationShown = false;
         }
 
-        boolean navigated = !(urlBefore.equals(wd.getCurrentUrl()) && titleBefore.equals(wd.getTitle()));
+        boolean navigated = !(urlBefore.equals(wd.getCurrentUrl()) && titleBefore.equals(wd .getTitle()));
         return disabledAttr || validationShown || !navigated;
     }
 
