@@ -1,9 +1,9 @@
 package org.example.pages;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.time.Duration;
 
 public class DashBoard extends BasePage {
     private By burgerButton = By.cssSelector(".nI-gNb-drawer");
@@ -25,13 +25,13 @@ public class DashBoard extends BasePage {
         return new AccountSettingPage(this.wd);
     }
 
-    public SettingPage navigateToSetting(){
+    public ProfilePage navigateToSetting(){
 
         waitAndClick(burgerButton);
 
 
         waitAndClick(profileSetting);
-        return new SettingPage(this.wd);
+        return new ProfilePage(this.wd);
 
 
     }

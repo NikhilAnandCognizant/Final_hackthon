@@ -3,10 +3,9 @@ import org.example.pages.DashBoard;
 import org.example.pages.HomePage;
 import org.example.pages.SettingPage;
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import utils.CredsUtil;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
