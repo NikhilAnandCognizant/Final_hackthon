@@ -20,7 +20,7 @@ public class ResumeUploadTest extends BaseTest{
 
     private String user;
     private String pass;
-
+   private DashBoard db;
     @BeforeMethod
     public void setupBrowser() throws IOException{
         driver.get("https://www.naukri.com/");
@@ -30,13 +30,13 @@ public class ResumeUploadTest extends BaseTest{
         Object[][] data = CredsUtil.getxl();
         user = data[0][0].toString();
         pass = data[0][1].toString();
+        HomePage lp = new HomePage(driver);
+       this.db = lp.login(user, pass);
+
     }
 
-    @Test(dataProvider = "creds", priority = 1)
+    @Test(dataProvider = "creds")
     public void verifyCorrectResumeUpload(String userName, String password){
-        HomePage lp = new HomePage(driver);
-        DashBoard db = lp.login(user, pass);
-
         ProfilePage pp = db.navigateToSetting();
         File file = new File("./src/test/resources/CompressedResume.pdf");
         if (!file.exists()) {
@@ -47,10 +47,9 @@ public class ResumeUploadTest extends BaseTest{
         Assert.assertTrue(pp.isResumeUploadSuccessful(), "Resume upload failed or success message not displayed!");
     }
 
-    @Test(dataProvider = "creds", priority = 2)
+    @Test(dataProvider = "creds")
     public void verifyInvalidFormatResumeUpload(String userName, String password){
-        HomePage lp = new HomePage(driver);
-        DashBoard db = lp.login(user, pass);
+
         ProfilePage pp = db.navigateToSetting();
 
         File file = new File("./src/test/resources/InvalidFormatResume.png");
@@ -64,10 +63,9 @@ public class ResumeUploadTest extends BaseTest{
                 "Expected format error not shown! Actual: " + errorText);
     }
 
-    @Test(dataProvider = "creds", priority = 3)
+    @Test(dataProvider = "creds")
     public void verifyLoginSizeResumeUpload(String userName, String password){
-        HomePage lp = new HomePage(driver);
-        DashBoard db = lp.login(user, pass);
+
         ProfilePage pp = db.navigateToSetting();
 
         File file = new File("./src/test/resources/MaxSizeResume.pdf");
@@ -81,8 +79,5 @@ public class ResumeUploadTest extends BaseTest{
                 "Expected size error not shown! Actual: " + errorText);
     }
 
-    @AfterMethod(alwaysRun = true)
-    public void tearDown() {
-        driver.manage().deleteAllCookies();
-    }
+
 }

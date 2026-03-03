@@ -4,16 +4,13 @@ package com.tests;
 import org.example.pages.HomePage;
 import org.example.pages.SearchFilter;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import java.time.Duration;
-import java.util.List;
 
-public class searchFilterTest extends BaseTest {
+public class SearchFilterTest extends BaseTest {
 
     HomePage hp;
     SearchFilter sf;

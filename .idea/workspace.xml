@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63afd8e6-76c5-4ae3-beba-7c740e84168c" name="Changes" comment="">
+    <list default="true" id="63afd8e6-76c5-4ae3-beba-7c740e84168c" name="Changes" comment="Merge remote-tracking branch 'origin/Mrityunjay_Profile_Management'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/org/example/pages/DashBoard.java&#10;#&#9;src/main/java/org/example/pages/ProfilePage.java&#10;#&#9;src/test/java/com/tests/ResumeHeaderAndSkillUpdateTest.java">
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/SettingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/SettingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/ToggleNotificationsSettingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/ResumeHeaderUpdateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/AccountSettingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/AccountSettingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/AuthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/AuthTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/GeneralUiNavigationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/GeneralUiNavigationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/OrganizationBlocklistFunctionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/OrganizationBlocklistFunctionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/ResumeHeaderAndSkillUpdateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/ResumeHeaderAndSkillUpdateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/ResumeUploadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/ResumeUploadTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/searchFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/SearchFilterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,18 +38,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "NikhilAnandCognizant"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;NikhilAnandCognizant&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/NikhilAnandCognizant/Final_hackthon.git",
-    "accountId": "d7d559e2-be4b-480d-aafd-3a9d894e0007"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/NikhilAnandCognizant/Final_hackthon.git&quot;,
+    &quot;accountId&quot;: &quot;d7d559e2-be4b-480d-aafd-3a9d894e0007&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -58,16 +67,26 @@
     "TestNG.AuthTest.executor": "Run",
     "TestNG.AuthTest.verifyInvalidLoginErrorMessage.executor": "Run",
     "TestNG.AuthTest.verifySuccessfulLogin.executor": "Run",
+    "TestNG.C:/Users/2464120/OneDrive - Cognizant/Desktop/Final_hackthon/testng.xml.executor": "Run",
+    "TestNG.GeneralUiNavigationTest.executor": "Run",
+    "TestNG.OrganizationBlocklistFunctionTest.addToBlocklistAndRemoveFromIt.executor": "Run",
+    "TestNG.OrganizationBlocklistFunctionTest.executor": "Run",
+    "TestNG.ResumeHeaderAndSkillUpdateTest.executor": "Run",
     "TestNG.ResumeHeaderUpdateTest.editHeader.executor": "Run",
     "TestNG.ResumeHeaderUpdateTest.editSkill.executor": "Run",
     "TestNG.ResumeHeaderUpdateTest.insertSkill.executor": "Run",
-    "git-widget-placeholder": "main",
+    "TestNG.ResumeUploadTest.executor": "Run",
+    "TestNG.ResumeUploadTest.verifyCorrectResumeUpload.executor": "Run",
+    "TestNG.SearchFilterTest.verifyLocationFilter.executor": "Run",
+    "TestNG.SearchFilterTest.verifySalaryFilter.executor": "Run",
+    "git-widget-placeholder": "Rebasing main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/2464120/OneDrive - Cognizant/Desktop/Final_hackthon/src",
     "onboarding.tips.debug.path": "C:/Users/2464120/OneDrive - Cognizant/Desktop/Final_hackthon/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -76,8 +95,18 @@
       <recent name="C:\Users\2464120\OneDrive - Cognizant\Desktop\Final_hackthon\src\main\java\org\example" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ResumeHeaderUpdateTest.insertSkill">
-    <configuration name="AuthTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.C:/Users/2464120/OneDrive - Cognizant/Desktop/Final_hackthon/testng.xml">
+    <configuration name="C:/Users/2464120/OneDrive - Cognizant/Desktop/Final_hackthon/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Final_hackthon" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResumeUploadTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Final_hackthon" />
       <extension name="coverage">
         <pattern>
@@ -86,7 +115,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.AuthTest" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.ResumeUploadTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -94,7 +123,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthTest.verifySuccessfulLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ResumeUploadTest.verifyCorrectResumeUpload" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Final_hackthon" />
       <extension name="coverage">
         <pattern>
@@ -103,8 +132,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.AuthTest" />
-      <option name="METHOD_NAME" value="verifySuccessfulLogin" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.ResumeUploadTest" />
+      <option name="METHOD_NAME" value="verifyCorrectResumeUpload" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -112,7 +141,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResumeHeaderUpdateTest.editHeader" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchFilterTest.verifyLocationFilter" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Final_hackthon" />
       <extension name="coverage">
         <pattern>
@@ -121,8 +150,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.ResumeHeaderUpdateTest" />
-      <option name="METHOD_NAME" value="editHeader" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.SearchFilterTest" />
+      <option name="METHOD_NAME" value="verifyLocationFilter" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -130,7 +159,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResumeHeaderUpdateTest.editSkill" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchFilterTest.verifySalaryFilter" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Final_hackthon" />
       <extension name="coverage">
         <pattern>
@@ -139,26 +168,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.ResumeHeaderUpdateTest" />
-      <option name="METHOD_NAME" value="editSkill" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ResumeHeaderUpdateTest.insertSkill" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Final_hackthon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.ResumeHeaderUpdateTest" />
-      <option name="METHOD_NAME" value="insertSkill" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.SearchFilterTest" />
+      <option name="METHOD_NAME" value="verifySalaryFilter" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -168,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ResumeHeaderUpdateTest.insertSkill" />
-        <item itemvalue="TestNG.ResumeHeaderUpdateTest.editSkill" />
-        <item itemvalue="TestNG.ResumeHeaderUpdateTest.editHeader" />
-        <item itemvalue="TestNG.AuthTest.verifySuccessfulLogin" />
-        <item itemvalue="TestNG.AuthTest" />
+        <item itemvalue="TestNG.C:/Users/2464120/OneDrive - Cognizant/Desktop/Final_hackthon/testng.xml" />
+        <item itemvalue="TestNG.ResumeUploadTest.verifyCorrectResumeUpload" />
+        <item itemvalue="TestNG.ResumeUploadTest" />
+        <item itemvalue="TestNG.SearchFilterTest.verifyLocationFilter" />
+        <item itemvalue="TestNG.SearchFilterTest.verifySalaryFilter" />
       </list>
     </recent_temporary>
   </component>
@@ -200,12 +211,40 @@
       <option name="project" value="LOCAL" />
       <updated>1771521050817</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003">
+      <option name="closed" value="true" />
+      <created>1772191133905</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1772191133905</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Merge remote-tracking branch 'origin/Mrityunjay_Profile_Management'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/org/example/pages/DashBoard.java&#10;#&#9;src/main/java/org/example/pages/ProfilePage.java&#10;#&#9;src/test/java/com/tests/ResumeHeaderAndSkillUpdateTest.java">
+      <option name="closed" value="true" />
+      <created>1772191172640</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1772191172640</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Auth test scenerio implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Auth test scenerio implemented" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/Mrityunjay_Profile_Management'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/org/example/pages/DashBoard.java&#10;#&#9;src/main/java/org/example/pages/ProfilePage.java&#10;#&#9;src/test/java/com/tests/ResumeHeaderAndSkillUpdateTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/Mrityunjay_Profile_Management'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/org/example/pages/DashBoard.java&#10;#&#9;src/main/java/org/example/pages/ProfilePage.java&#10;#&#9;src/test/java/com/tests/ResumeHeaderAndSkillUpdateTest.java" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/tests/ResumeUploadTest.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Final_hackthon$AuthTest.ic" NAME="AuthTest Coverage Results" MODIFIED="1771517121388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">

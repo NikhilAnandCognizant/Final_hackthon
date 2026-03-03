@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 public class ProfilePage extends BasePage {
     private By editButton = By.xpath("//div[@class=\"widgetHead\"]/span[@class=\"edit icon\"]");
     private By textar = By.id("resumeHeadlineTxt");
-    private WebDriver wb ;
+
     private By save = By.xpath("//div[@class=\"action s12\"]/button");
     private By displayOfHeader = By.xpath("//textarea[@id ='resumeHeadlineTxt']");
     private By skillChips = By.xpath("//div[@class='prefill']/span[@class='chip typ-14Medium']");
@@ -23,24 +23,26 @@ public class ProfilePage extends BasePage {
     private By skillSugInput = By.id("keySkillSugg");
     private By saveButtonOfSkill = By.id("saveKeySkills");
     private By modalWhileSaving = By.xpath("//div[@class='ltCont']/div/div[@class='crossLayer']/span[@class='icon' and text() = 'CrossLayer']");
-    //locator for uploading resume
-    // Inside ProfilePage class
-    private By resumeUploadInput = By.id("attachCV"); // Check if this ID is correct for your Naukri version
+
+    private By resumeUploadInput = By.xpath("//input[@id=\"attachCV\"]"); // Check if this ID is correct for your Naukri version
     private By uploadSuccessMessage = By.xpath("//span[@id='attachCVMsgBox']//p[@class='msg']");
     //locator for getting error message
     private By uploadErrorMessage = By.xpath("//p[@class='error']");
 
+    public ProfilePage(WebDriver wd){
+        super(wd);
 
+    }
     public void uploadResume(String filePath) {
-        WebDriverWait wait = new WebDriverWait(this.wb, Duration.ofSeconds(10));
-        // Find the hidden input element and send the file path
-        WebElement uploadElement = wb.findElement(resumeUploadInput);
+        System.out.println("getting element.............................");
+//        WebElement uploadElement = waitAndGetElement(resumeUploadInput,20);
+        WebElement uploadElement = wd.findElement(resumeUploadInput);
         uploadElement.sendKeys(filePath);
     }
 
     public boolean isResumeUploadSuccessful() {
         try {
-            WebDriverWait wait = new WebDriverWait(this.wb, Duration.ofSeconds(10));
+            WebDriverWait wait = new WebDriverWait(this.wd, Duration.ofSeconds(10));
             return wait.until(ExpectedConditions.visibilityOfElementLocated(uploadSuccessMessage)).isDisplayed();
         } catch (Exception e) {
             return false;
@@ -50,7 +52,7 @@ public class ProfilePage extends BasePage {
     //Method to get upload error text ()
     public String getUploadErrorText(){
         try{
-            WebDriverWait wait = new WebDriverWait(this.wb, Duration.ofSeconds(10));
+            WebDriverWait wait = new WebDriverWait(this.wd, Duration.ofSeconds(10));
             WebElement errorElement = wait.until(ExpectedConditions.presenceOfElementLocated(uploadErrorMessage));
             return errorElement.getText();
 
@@ -58,10 +60,7 @@ public class ProfilePage extends BasePage {
             return ""; //empty string if no text is located
         }
     }
-    public ProfilePage(WebDriver wd){
-        super(wd);
 
-    }
     public void editHeadLine(String header){
 
 

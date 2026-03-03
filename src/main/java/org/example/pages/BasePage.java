@@ -15,6 +15,7 @@ public class BasePage {
      private  final int defaultTiming =10;
 
      public BasePage(WebDriver dr){
+
         this.wd = dr;
 
      }

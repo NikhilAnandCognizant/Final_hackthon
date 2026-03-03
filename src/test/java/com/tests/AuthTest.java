@@ -26,7 +26,7 @@ public class AuthTest extends BaseTest {
     }
     // Removed redundant login logic from individual tests where possible
 
-    @Test(dataProvider = "creds", groups = {"login_flow"},priority = 2)
+    @Test(dataProvider = "creds", groups = {"login_flow"})
     public void verifySuccessfulLogin(String userName, String pass) {
 
         HomePage lp = new HomePage(driver);
@@ -37,22 +37,16 @@ public class AuthTest extends BaseTest {
         Assert.assertTrue(wait.until(ExpectedConditions.urlContains("homepage")),
                 "Login failed: URL does not contain 'homepage'");
     }
-
-    @Test(priority = 0)
+    @Test()
     public void verifyPasswordMasking() {
-
         HomePage lp = new HomePage(driver);
-
         String inputType =lp.getPasswordFieldType();
-
-
-
         // Assert that it is 'password' to ensure masking is active
         Assert.assertEquals(inputType, "password", "CRITICAL: Password field is not masked!");
 
         System.out.println("Masking verification passed. Input type is: " + inputType);
     }
-    @Test(groups = {"login_flow"},priority = 1)
+    @Test(groups = {"login_flow"})
     public void verifyInvalidLoginErrorMessage() {
 
         HomePage lp = new HomePage(driver);
@@ -66,11 +60,12 @@ public class AuthTest extends BaseTest {
         Assert.assertTrue(actualMsg.contains("Invalid details"), "Error message text mismatch! Found: " + actualMsg);
     }
 
-    @Test(dependsOnMethods = {"verifySuccessfulLogin"}, dataProvider = "creds")
+    @Test( dataProvider = "creds")
     public void verifyLogout(String userName, String pass) {
+        HomePage lp = new HomePage(driver);
 
+        DashBoard db = lp.login(userName, pass);
 
-        DashBoard db = new DashBoard(driver);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.urlContains("homepage"));
 
@@ -80,5 +75,5 @@ public class AuthTest extends BaseTest {
         Assert.assertTrue(wait.until(ExpectedConditions.urlToBe("https://www.naukri.com/")),
                 "User was not redirected to landing page after logout.");
     }
-
+// THREADLOCAL AND PARALLEL
 }

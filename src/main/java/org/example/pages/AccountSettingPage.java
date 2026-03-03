@@ -1,11 +1,8 @@
 package org.example.pages;
 
-import org.example.utils.DriverSetup;
-import org.openqa.selenium.*;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
+import org.openqa.selenium.*;
+
 import java.util.List;
 import java.util.stream.Collectors;
 

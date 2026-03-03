@@ -14,7 +14,7 @@ import java.util.List;
 
 public class OrganizationBlocklistFunctionTest extends BaseTest {
     private AccountSettingPage asp;
-    @BeforeTest
+    @BeforeMethod
     public void setupBrowser() throws IOException {
         driver.get("https://www.naukri.com/");
         Object[][] data = CredsUtil.getxl();

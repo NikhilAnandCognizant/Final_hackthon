@@ -19,7 +19,7 @@ public class GeneralUiNavigationTest extends BaseTest {
     private static final String BASE_URL = "https://www.naukri.com/";
 
     // ---------- TC-18 (priority 1): verifyCompanyLogoVisibility ----------
-    @Test(priority = 1, description = "TC-18: Company logo is visible and rendered on job detail page")
+    @Test( description = "TC-18: Company logo is visible and rendered on job detail page")
     public void verifyCompanyLogoVisibility() {
         driver.get(BASE_URL);
 
@@ -41,7 +41,7 @@ public class GeneralUiNavigationTest extends BaseTest {
     }
 
     // ---------- TC-19 (priority 2): verifyFooterSocialLinks (LinkedIn) ----------
-    @Test(priority = 2, description = "TC-19: Scroll to footer, ensure LinkedIn icon visible, click, verify new tab host")
+    @Test( description = "TC-19: Scroll to footer, ensure LinkedIn icon visible, click, verify new tab host")
     public void verifyFooterLinkedInNavigation() {
         driver.get(BASE_URL);
 
@@ -69,7 +69,7 @@ public class GeneralUiNavigationTest extends BaseTest {
     }
 
     // ---------- TC-20 (priority 3): verifySearchButtonState ----------
-    @Test(priority = 3, description = "TC-20: Search button behavior when input is empty (disabled or validation)")
+    @Test( description = "TC-20: Search button behavior when input is empty (disabled or validation)")
     public void verifySearchButtonState() {
         driver.get(BASE_URL);
 

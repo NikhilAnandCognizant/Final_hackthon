@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 
 public class ResumeHeaderAndSkillUpdateTest extends BaseTest{
 
-    @BeforeTest
+    @BeforeMethod
     public void setupBrowser() throws IOException {
         driver.get("https://www.naukri.com/");
         Object[][] data = CredsUtil.getxl();
