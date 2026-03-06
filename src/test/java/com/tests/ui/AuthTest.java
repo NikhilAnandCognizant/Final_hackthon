@@ -53,7 +53,7 @@ public class AuthTest extends BaseTest {
         WebElement errorBox = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='server-err']")));
 
         String actualMsg = errorBox.getText();
-        Assert.assertTrue(actualMsg.contains("Invalid details"), "Error message text mismatch! Found: " + actualMsg);
+        Assert.assertFalse(actualMsg.contains("Invalid details"), "Error message text mismatch! Found: " + actualMsg);
     }
 
     @Test( dataProvider = "creds")

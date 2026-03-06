@@ -1,19 +1,26 @@
 package com.tests.ui;
 
+import org.apache.commons.io.FileUtils;
 import org.example.utils.DriverSetup;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import org.testng.ITestResult;
 import org.testng.annotations.*;
 import utils.CredsUtil;
 
+import java.io.File;
 import java.io.IOException;
+
 
 public class BaseTest {
 
         protected WebDriver driver;
      @Parameters("browser")
     @BeforeMethod(alwaysRun = true) // always test=true , if we do grouping in xml it helps their
-    public void prepareModule(String browser) {
+    public void prepareModule(@Optional("chrome") String browser ) {
+
         DriverSetup.prepareModule(browser);
         driver =DriverSetup.getDriver();
 
@@ -22,11 +29,12 @@ public class BaseTest {
     }
 
     @AfterMethod(alwaysRun = true)
-    public void cleanupModule() {
-        if (driver != null) {
-            driver.quit();
-            System.out.println("Browser closed.");
-        }
+    public void cleanupModule(ITestResult iTestResult) {
+
+//        if (driver != null) {
+//            driver.quit();
+//            System.out.println("Browser closed.");
+//        }
     }
      @DataProvider(name = "creds")
      public Object [][] dataPr() throws IOException {
