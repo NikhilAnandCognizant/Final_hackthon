@@ -69,7 +69,9 @@ public class ReportingListener implements ITestListener {
         if (screenshotPath != null) {
             ExtentReportUtil.getTest().addScreenCaptureFromPath(screenshotPath);
         }
+        driver.quit();
     }
+
 
     @Override
     public void onFinish(ITestContext context) {

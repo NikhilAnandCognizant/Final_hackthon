@@ -19,7 +19,8 @@ public class BaseTest {
         protected WebDriver driver;
      @Parameters("browser")
     @BeforeMethod(alwaysRun = true) // always test=true , if we do grouping in xml it helps their
-    public void prepareModule(@Optional("chrome") String browser ) {
+    public void prepareModule(@Optional("chrome") String browser  ) {
+   if (browser == null) browser = "chrome";
 
         DriverSetup.prepareModule(browser);
         driver =DriverSetup.getDriver();
@@ -31,10 +32,10 @@ public class BaseTest {
     @AfterMethod(alwaysRun = true)
     public void cleanupModule(ITestResult iTestResult) {
 
-//        if (driver != null) {
-//            driver.quit();
-//            System.out.println("Browser closed.");
-//        }
+        if (driver != null) {
+            driver.quit();
+            System.out.println("Browser closed.");
+        }
     }
      @DataProvider(name = "creds")
      public Object [][] dataPr() throws IOException {

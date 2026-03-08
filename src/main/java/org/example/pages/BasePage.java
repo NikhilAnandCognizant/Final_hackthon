@@ -12,6 +12,7 @@ import java.time.Duration;
 
 public class BasePage {
      WebDriver wd ;
+     
      private  final int defaultTiming =10;
 
      public BasePage(WebDriver dr){

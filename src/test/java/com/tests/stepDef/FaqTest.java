@@ -1,6 +1,7 @@
 package com.tests.stepDef;
 
 import com.tests.ui.BaseTest;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -8,19 +9,28 @@ import org.example.pages.DashBoard;
 import org.example.pages.FaqPage;
 import org.example.pages.HomePage;
 
+import org.example.utils.DriverSetup;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import utils.CredsUtil;
 
 import java.io.IOException;
 
-public class FaqTest extends BaseTest {
+public class FaqTest {
     private FaqPage fp;
     private String suggestedText;
+    private WebDriver driver;
 
-
+//    @Before
+//    public void setup(){
+//
+//
+//    }
 
     @Given("User is on the FaqHomepage")
     public void userIsOnTheFaqHomepage() throws IOException {
+        DriverSetup.prepareModule("chrome");
+//        this.driver = DriverSetup.getDriver();
         driver.get("https://www.naukri.com/");
         Object[][] data = CredsUtil.getxl();
         String user = data[0][0].toString();

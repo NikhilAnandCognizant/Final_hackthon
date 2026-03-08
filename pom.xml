@@ -67,6 +67,12 @@
             <version>5.1.1</version>
         </dependency>
         <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>${cucumber.junit-version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-nop</artifactId>
             <version>2.0.9</version>
@@ -81,6 +87,7 @@
         <selenium.version>4.18.1</selenium.version>
         <testng.version>7.9.0</testng.version>
         <poi.version>5.2.5</poi.version>
+        <cucumber.junit-version>7.14.1</cucumber.junit-version>
     </properties>
     <build>
         <plugins>
